@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+
+  h1 {
+    text-align: left;
+    padding: 20px 0 0 20px;
+    margin: 0;
+  }
+
+  .content {
+    display: flex;
+    gap: 32px;
+    .tableSection {
+      flex: 1;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .chartSection {
+      flex: 1;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    .content {
+      gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    .content {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    padding: 16px;
+
+    .tableSection,
+    .chartSection {
+      min-height: auto;
+    }
+  }
+}

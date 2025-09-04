@@ -1,0 +1,13 @@
+.table {
+  :global(.ant-table-thead) {
+    :global(.ant-table-cell) {
+      background-color: rgba(23, 35, 57, 1) !important;
+      color: white !important;
+      font-weight: 600;
+
+      &:hover {
+        background-color: rgba(23, 35, 57, 0.8) !important;
+      }
+    }
+  }
+}
